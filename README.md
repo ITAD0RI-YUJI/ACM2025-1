@@ -2,6 +2,9 @@
 
 Bienvenidos al repositorio del curso de React JS de ACM, donde podrán subir sus proyectos o avances solicitados a lo largo del curso. Esto con el objetivo de que nos facilitemos más las cosas.<br><br>
 
+>[!TIP]
+>A la hora de subir los proyectos, sería bueno que suban una carpeta con su nombre y código :)
+
 ## Objetivo del respositorio
 como se ha mencionadao en este repositorio podrán subir sus proyectos. Además podrán encontrar los links de apoyo que hemos ido viendo a lo largo de las clases
 
