@@ -1,0 +1,19 @@
+:root{
+    /* --negroClaroII: #1a1a1a; */
+    --negroClaroII: #1f1f1f;
+    --negroClaro: #252525;
+    --negro: black;
+    --letter: "Roboto", sans-serif;
+    --blue: #78bafd;
+    --white: #FFFF;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--negro);
+    font-family: var(--letter);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

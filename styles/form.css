@@ -1,0 +1,114 @@
+.container{
+    width: 65%;
+
+    border-radius: .3125em;
+    overflow: hidden;
+}
+
+.sub-container{
+    background-color: var(--negroClaro);
+    overflow: hidden;
+}
+
+.sub-container:not(:first-child){
+    margin-top: 1%;
+    background-color: transparent;
+    height: 21.875em;
+    overflow-y: auto;
+}
+
+.task_container::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+.task_container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.container_form{
+    border-radius: .3125em;
+}
+
+input{
+    font-family: var(--letter);
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: .625em;
+}
+
+fieldset:first-child{
+    border-bottom: thin solid rgba(255, 255, 255, .2);
+}
+
+fieldset:nth-child(2){
+    background-color: var(--negroClaroII);
+    justify-content: space-between;
+}
+
+.form_input-task-name{
+    font-size: .875em;
+
+    width: 100%;
+    background-color: transparent;
+    color: var(--white);
+    
+    outline: none;
+    border: none;
+
+    padding: .625em;
+    box-sizing: border-box;
+}
+
+.form_input-task-name::placeholder{
+    color: var(--blue);
+}
+
+.form_input-task-name:focus::placeholder{
+    color: var(--white);
+}
+
+svg{
+    cursor: pointer;
+}
+
+fieldset:first-child svg{
+    color: var(--blue);
+    border-radius: .125em;
+}
+fieldset:nth-child(2) svg{
+    color: white;
+    transition: .2s;
+    padding: .125em;
+    border-radius: .125em;
+
+    &:hover{
+        background-color: rgba(158, 158, 158, .15);
+    }
+}
+
+.form_icons-task{
+    display: flex;
+    gap: .75em;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    background-color: transparent;
+    
+    border: none;
+    border: thin solid var(--white);
+    outline: none;
+    
+    border-radius: .1875rem;
+    padding: .375rem;
+    
+    opacity: .5;
+    color: var(--white);
+}
