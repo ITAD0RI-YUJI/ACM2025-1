@@ -1,0 +1,32 @@
+.task{
+    background-color: var(--negroClaro);   
+    border-radius: .3125em;
+    margin-top: 1%;
+    
+    transition: .2s;
+    cursor: pointer;
+
+    padding: 1.125em;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    &:hover{
+        opacity: .8;
+    }
+}
+
+.task svg{
+    color: var(--green);
+}
+
+.task_p{
+    width: 90%;
+    color: var(--white);
+    font-size: .875em;
+
+    box-sizing: border-box;
+    padding-left: .9375em;
+}
