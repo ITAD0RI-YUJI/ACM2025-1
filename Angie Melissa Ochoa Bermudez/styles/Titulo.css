@@ -1,0 +1,26 @@
+.Titulo {
+    inline-size: block;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    width: 60%;
+    max-width: 600px;
+    border: 2px solid #ce66bd;
+  }
+  
+  .Titulo h1 {
+    display: block;
+    font-size: 28px;
+    color: #751368;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .Titulo h4 {
+    display: block;
+    font-size: 16px;
+    color: #34363a;
+    margin: 8px 0 0;
+    font-weight: 400;
+  }
+  

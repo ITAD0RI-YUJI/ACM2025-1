@@ -1,0 +1,77 @@
+
+.task{
+    background-color: var(--moraito);   
+    border-radius: .3125em;
+    margin-top: 4%;
+    transition: .2s;
+    cursor: pointer;
+    padding: 1.125em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &:hover{
+        opacity: .8;
+    }
+    
+}
+.task_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 10px;
+}
+.task svg {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    transition: stroke 0.2s ease;
+    justify-content: flex-center;
+  }
+
+.task_icon {
+  stroke: black; 
+  transition: stroke 0.2s ease;
+  fill: transparent;
+  cursor: pointer;
+}
+.task_icon:hover {
+  stroke: #312c88; 
+  fill: #817ce7;
+}
+.task_p{
+    width: 90%;
+    color: var(--white);
+    font-size: .875em;
+    box-sizing: border-box;
+
+    padding-left: .9375em;
+    
+}
+.task_submit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: rgb(134, 18, 82);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .875em;
+  transition: background-color 0.2s ease;
+}
+.detalles_tarea {
+  display: flex;
+  align-items: center;
+  background-color: var(--moraito);
+  margin-left: 30px; /* ← Ajusta este valor según lo que necesites */
+  padding: 2px 10px;  /* Opcional: para que se vea más espacioso */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  gap: 10px;
+}
+
+.task_submit:hover {
+  background-color: #e41d4f;
+}

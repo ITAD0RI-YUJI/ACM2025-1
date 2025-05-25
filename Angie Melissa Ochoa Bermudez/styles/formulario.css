@@ -1,0 +1,103 @@
+
+  .container {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: rgba(127, 255, 212, 0.267);
+    border: 2px solid #7f00ff;
+    position: relative;  /* 👈 necesario para que z-index funcione */
+  z-index: 1;          /* 👈 estará encima del pseudo-elemento */
+/* background-color: white; */
+  }
+  
+  .sub-container.container_form {
+    width: 100%;
+  }
+
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form_task-information {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form_input-task-name {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid --white;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .form_input-task-name:focus {
+    border-color: #4f46e5;
+  }
+  
+  .form_form-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .form_icons-task {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .form_icons-task svg {
+    stroke: #6b7280;
+    cursor: pointer;
+    transition: stroke 0.2s ease;
+  }
+  
+  .form_icons-task svg:hover {
+    stroke: #111827;
+  }
+  
+  .form_task-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .form_submit {
+    background-color: #635ec4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .form_submit:hover {
+    background-color: #271f94;
+  }
+  fieldset {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0); 
+  padding: 6px;
+}
+
+legend {
+  font-size: 1.5em;
+  padding: 0 10px;
+  color: #34363a;
+  background-color: var(--negro); 
+  position: absolute;
+  top: -40px; /* subir la leyenda encima del borde */
+  left: 10px;
+  border-radius: 4px;
+}

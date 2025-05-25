@@ -1,0 +1,46 @@
+:root {
+  /* Paleta y fuentes */
+  --negroClaroII: #130808;
+  --negroClaro: #252525;
+  --negro: rgb(235, 207, 245);
+  --letter: "Roboto", sans-serif;
+  --blue: #78bafd;
+  --white: #ffff;
+  --moraito: #6624b1b6;
+}
+
+body {
+  position: relative; /* Para que el pseudo-elemento funcione correctamente */
+  background-color: var(--negro);
+  font-family: var(--letter);
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Imagen decorativa principal (esquina superior derecha) */
+  background-image: url('flore2.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 500px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url('flore2.png');
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: top left;
+  transform: scaleX(-1) scaleY(-1); /* Voltea horizontal y verticalmente */
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
