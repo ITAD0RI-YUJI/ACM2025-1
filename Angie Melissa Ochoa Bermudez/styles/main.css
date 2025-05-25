@@ -1,5 +1,5 @@
 :root {
-  /* Paleta y fuentes */
+  
   --negroClaroII: #130808;
   --negroClaro: #252525;
   --negro: rgb(235, 207, 245);
@@ -10,7 +10,7 @@
 }
 
 body {
-  position: relative; /* Para que el pseudo-elemento funcione correctamente */
+  position: relative; 
   background-color: var(--negro);
   font-family: var(--letter);
   min-height: 100vh;
@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: flex-start;
 
-  /* Imagen decorativa principal (esquina superior derecha) */
+  
   background-image: url('flore2.png');
   background-repeat: no-repeat;
   background-position: top right;
@@ -39,7 +39,7 @@ body::before {
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: top left;
-  transform: scaleX(-1) scaleY(-1); /* Voltea horizontal y verticalmente */
+  transform: scaleX(-1) scaleY(-1);
   pointer-events: none;
   z-index: 0;
   opacity: 1;
