@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Lista de Tareas</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>📋 Mis Tareas</h1>
+        </header>
+
+        <section class="task-creator">
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Título de la tarea" required />
+                <textarea id="task-desc" placeholder="Descripción..." rows="2" required></textarea>
+                
+                <div class="task-meta">
+                    <input type="date" id="task-date" required />
+
+                    <select id="task-priority" required>
+                        <option value="" disabled selected>Prioridad</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+
+                    <select id="task-status" required>
+                        <option value="" disabled selected>Estado</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="en-proceso">En proceso</option>
+                        <option value="completada">Completada</option>
+                    </select>
+                </div>
+
+                <button type="submit">➕ Agregar</button>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <h2>🗂️ Tareas</h2>
+            <ul id="task-list" class="task-list">
+                <!-- Aquí se insertarán las tareas dinámicamente -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

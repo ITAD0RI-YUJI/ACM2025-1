@@ -1,0 +1,127 @@
+/* -------------------- RESET BÁSICO -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* -------------------- CONTENEDOR PRINCIPAL -------------------- */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* -------------------- HEADER -------------------- */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+/* -------------------- FORMULARIO -------------------- */
+.task-creator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-creator input,
+.task-creator textarea,
+.task-creator select,
+.task-creator button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.task-creator textarea {
+    resize: vertical;
+}
+
+.task-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.task-creator button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-creator button:hover {
+    background-color: #45a049;
+}
+
+/* -------------------- LISTA DE TAREAS -------------------- */
+.task-list-section h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-list li {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* -------------------- ESTILOS POR PRIORIDAD -------------------- */
+.priority-alta {
+    border-left-color: #e53935;
+}
+
+.priority-media {
+    border-left-color: #fbc02d;
+}
+
+.priority-baja {
+    border-left-color: #43a047;
+}
+
+/* -------------------- ESTILOS POR ESTADO -------------------- */
+.status-pendiente {
+    color: #e53935;
+    font-weight: bold;
+}
+
+.status-en-proceso {
+    color: #fbc02d;
+    font-weight: bold;
+}
+
+.status-completada {
+    color: #43a047;
+    font-weight: bold;
+    text-decoration: line-through;
+}
