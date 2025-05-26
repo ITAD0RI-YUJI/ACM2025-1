@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi App de Notas</title>
+  <style>
+    /* Pega aquí todo tu CSS */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcc00;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    .formulario {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .formulario input {
+      flex: 1;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: white;
+      outline: none;
+    }
+
+    .formulario button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #ffcc00;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .formulario button:hover {
+      background-color: #e6b800;
+    }
+
+    .notas {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .nota {
+      background-color: #2a2a2a;
+      padding: 15px 20px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .nota:hover {
+      transform: scale(1.02);
+    }
+
+    .nota p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .borrar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+      color: #ff6666;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .borrar:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>📝 Mis Notas</h1>
+
+    <form class="formulario">
+      <input type="text" placeholder="Escribe una nota..." required />
+      <button type="submit">➕ Agregar</button>
+    </form>
+
+    <div class="notas">
+      <div class="nota">
+        <p>✨ Esta es una nota de ejemplo</p>
+        <button class="borrar">🗑️</button>
+      </div>
+      <div class="nota">
+        <p>📚 Terminar tarea de matemáticas</p>
+        <button class="borrar">🗑️</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
