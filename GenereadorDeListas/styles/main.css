@@ -1,0 +1,8 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: "Sour Gummy", sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECEBDE;
+}

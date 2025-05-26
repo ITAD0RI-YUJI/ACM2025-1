@@ -1,0 +1,103 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: "Sour Gummy", sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECEBDE;
+}
+
+.container {
+    width: 70%;
+}
+
+fieldset {
+    border-radius: 0.2em;
+    border: 1.5px solid #141414;
+    align-content: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.title {
+    background-color: #A59D84;
+}
+
+.title:hover {
+    background-color: #b0a78d;
+}
+
+.description {
+    background-color: #cbc4a9;
+}
+
+.description:hover {
+    background-color: #d7d1b5;
+}
+
+.task_date, .task_time_limit, .sub_tasks {
+    background-color: #dfdbca;
+}
+.task_date:hover, .task_time_limit:hover, .sub_tasks:hover {
+    background-color: #e6e3d6;
+}
+
+.task_title_input, .task_description_input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(44, 35, 27);
+    font-family: "Sour Gummy", sans-serif;
+    width: 95%;
+}
+
+.task_title_input::placeholder{
+    color: rgb(44, 35, 27);
+}
+
+.task_title_input:focus::placeholder{
+    color: #827b67;
+}
+
+.task_description_input::placeholder{
+    color: rgb(44, 35, 27);
+}
+
+.task_description_input:focus::placeholder{
+    color: rgb(161, 161, 161);
+}
+
+.more_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task_addition_input {
+    width: 290px;
+    font-family: "Sour Gummy", sans-serif;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.task_addition_input::placeholder{
+    color: rgb(44, 35, 27);
+}
+
+.task_addition_input:focus::placeholder{
+    color: rgb(161, 161, 161);
+}
+
+.submit_btn {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    border: none;
+}
+
+#agregar {
+    background-color: transparent;
+    border: 1.5px solid #141414;
+    font-family: "Sour Gummy", sans-serif;
+    border-radius: 0.2em;
+}

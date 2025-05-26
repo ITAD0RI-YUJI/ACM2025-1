@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/task_creation.css">
+    <link rel="stylesheet" href="./styles/done_tasks.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="creacion">
+            <form action="" class="form">
+                <fieldset class="title">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M9 12h6" /><path d="M12 9v6" /></svg>
+                    <input type="text" placeholder="Título de la tarea (Ej. Crear página web)" class="task_title_input">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="24"  viewBox="0 0 26 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                </fieldset>
+                <fieldset class="description"> 
+                    <input type="text" placeholder="Descripción de la tarea (Ej. Iniciar HTML)" class="task_description_input">
+                </fieldset>
+                <div class="more_details">
+                    <fieldset class="task_date">
+                        <label for="fecha">Fecha límite:</label>
+                        <input type="date" id="task_date" name="fecha">
+                    </fieldset>
+                    <fieldset class="task_time_limit">
+                        <label for="fecha">Hora límite:</label>
+                        <input type="time" id="time_limit" name="time_limit">
+                    </fieldset>
+                    <fieldset class="sub_tasks">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                        <input type="text" placeholder="Agregar subtarea (Ej. Crear archivo HTML y CSS)" class="task_addition_input">
+                    </fieldset>
+                </div>
+                <fieldset class="submit_btn">
+                    <input type="submit" id="agregar" value="Agregar">
+                </fieldset>
+            </form>
+        </div>
+        <div class="creadas">
+            <h3>Tareas realizadas</h3>
+            <article class="task">
+                <input type="checkbox" id="task1">
+                <label for="task1" class="p_task_title">Investigar acerca del front-end</label>
+            </article>
+            <article class="task">
+                <input type="checkbox" id="task2">
+                <label for="task2" class="p_task_title">Trabajar en el mock up</label>
+            </article>
+            <article class="task">
+                <input type="checkbox" id="task3">
+                <label for="task3" class="p_task_title">Analizar y escoger paleta de colores</label>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
