@@ -1,0 +1,28 @@
+h3 {
+    background-color: #EDE4E0;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: none;
+    border-radius: 0.2em;
+    border: 1.5px solid #141414;
+}
+
+.task {
+    background-color: #C8DBBE;
+    padding: 5px;
+    border-radius: 0.2em;
+    border: 1.5px solid #141414;
+    display: flex;
+}
+
+.task:hover {
+    background-color: #d3e6ca;
+}
+
+article {
+    margin-bottom: 5px;
+}
+
+article input[type="checkbox"]:checked ~ * {
+    background-color: #a3b89e; /* Más oscuro */
+}
