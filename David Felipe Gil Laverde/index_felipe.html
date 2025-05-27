@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="estilos.css"/> 
+        <title>Tareas y compromisos</title>
+    </head>
+    <body>
+        <center>
+            <H1>
+                Tareas y compromisos
+            </H1>
+        </center>
+        
+        <div class="contenedor"></div>
+            <form>
+            
+                <fieldset> 
+                    <div class="fila-horizontal">
+                        <div>
+                            <label for="Tarea">Tarea</label>
+                            <input type="text" id="Tarea" placeholder="Escriba su tarea" class="tarea" required>
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" required>
+                        </div>
+                        <div>
+                            <label for="hora">Hora</label>
+                            <input type="time" id="hora" required>
+                        </div>
+                    </div>
+
+
+                    <br><br>
+                    <label for="notas">Notas y observaciones</label>
+                    <br>
+                    <textarea id="notas" placeholder="Escriba observaciones y apuntes generales (opcional)"></textarea>
+                    
+                    <br><br>
+                    <input type="submit" id="enviar" value="Guardar tarea">
+                </fieldset>  
+            
+         </form>
+        </div>
+        <br><br>
+
+        <table border="1">
+            <tr>
+                <th>Tarea</th>
+                <th>Tarea realizada</th>
+            </tr>
+            <tr>
+                <th>Ir al supermercado</th>
+                <td><input type="checkbox" id="tareaHecha" class="checkbox"></td>
+            </tr>
+            <tr>
+                <th>Hacer el trabajo de ingles</th>
+                <td><input type="checkbox" id="tareaHecha" class="checkbox"></td> 
+            </tr>
+            <tr>
+                <th>Estudiar para el parcial de programacion</th>
+                <td><input type="checkbox" id="tareaHecha" class="checkbox"></td>
+            </tr>
+            <tr>
+                <th>Llevar el perro al veterinario</th>
+                <td><input type="checkbox" id="tareaHecha" class="checkbox"></td>
+            </tr>
+            <tr>
+                <th>Lavar el carro</th>
+                <td><input type="checkbox" id="tareaHecha" class="checkbox"></td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

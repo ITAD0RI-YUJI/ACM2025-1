@@ -1,0 +1,52 @@
+
+:root{
+    --tablas: #E3EEB2; 
+    --fondo: #332D56;   
+    --ancho-tabla: 1000px;
+    --titulos: #71C0BB;
+}
+
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+
+/* Agrupar los tres campos en una fila */
+.fila-horizontal {
+    display: flex;
+    gap: 150px; 
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
+
+fieldset, table{
+    background-color: var(--tablas);
+    border-radius: 25px;
+    width: var(--ancho-tabla); 
+    margin: auto; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.checkbox{
+    display: flex;
+    margin: auto;
+}
+
+.tarea{
+    width: 300px;
+}
+
+h1{
+    font-size: xxx-large;
+    color: var(--titulos);
+}
