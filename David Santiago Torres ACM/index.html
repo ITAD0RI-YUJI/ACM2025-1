@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDo ACM</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <h2>Categorías</h2>
+      <ul>
+        <li class="active">📁 Trabajo</li>
+        <li>🏠 Hogar</li>
+        <li>💡 Ideas</li>
+        <li>❤️ Personal</li>
+      </ul>
+      <div class="theme-toggle">
+        <label>
+          🌞
+          <input type="checkbox" id="themeSwitch">
+          🌙
+        </label>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>📁 Trabajo</h1>
+        <div class="progress-bar">
+          <div class="progress" style="width: 30%;"></div>
+        </div>
+      </header>
+
+      <section class="tasks">
+        <div class="task-item">
+          <input type="checkbox" id="task1">
+          <label for="task1">
+            <span class="icon">💼</span>
+            Reunión con el equipo
+          </label>
+        </div>
+
+        <div class="task-item">
+          <input type="checkbox" id="task2">
+          <label for="task2">
+            <span class="icon">📝</span>
+            Escribir informe mensual
+          </label>
+        </div>
+      </section>
+
+      <div class="add-task-bar">
+        <input type="text" placeholder="Nueva tarea...">
+        <button>➕ Agregar</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
