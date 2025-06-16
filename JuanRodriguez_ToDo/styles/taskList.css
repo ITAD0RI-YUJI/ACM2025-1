@@ -1,58 +1,71 @@
-
 .task-list {
-    list-style-type: none;
     padding: 0;
-    margin-top: 15px;
-    height: 12%;
+    margin: 20px 0 0;
+    max-height: 60vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #37b8ad #444444;
 }
 
 .task-item {
     background-color: #444444;
-    border-radius: 4px;
-    padding: 12px;
-    margin-bottom: 10px;
-    height: 20%;
-    border-left: 3px solid #666666;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #666666;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .task-title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     color: #ffffff;
+    margin: 0;
 }
 
 .task-description {
-    color: #ffffff;
-    font-size: 13px;
+    color: #cccccc;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .task-details {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
-    color: #ffffff;
-}
-
-.priority-alta {
-    border-left-color: #ff6b6b;
-}
-
-.priority-media {
-    border-left-color: #ffd166;
-}
-
-.priority-baja {
-    border-left-color: #06d6a0;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 13px;
 }
 
 .status-pendiente {
     color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 .status-en-proceso {
     color: #ffd166;
+    background-color: rgba(255, 209, 102, 0.1);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 .status-completada {
     color: #06d6a0;
+    background-color: rgba(6, 214, 160, 0.1);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
 }

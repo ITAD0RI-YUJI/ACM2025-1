@@ -1,7 +1,6 @@
 #task-form {
     display: block;
-    height: 310px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 #task-form input, #task-form select {
@@ -12,7 +11,6 @@
     background-color: #444444;
     color: #e0e0e0;
     width: 100%;
-    margin-top: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
@@ -26,14 +24,15 @@
     background-color: #37b8ad;
     color: white;
     border: none;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
     width: 100%;
     transition: background-color 0.2s;
+    margin-top: 5px;
 }
 
 #task-form button:hover {
-    background-color: #b83737;
+    background-color: #2a8a80;
 }
