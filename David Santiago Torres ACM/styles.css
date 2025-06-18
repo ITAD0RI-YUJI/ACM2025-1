@@ -1,0 +1,245 @@
+/* ======== Reset básico ======== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ======== Temas ======== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1e1e1e;
+  --header-bg: #f3f3f3;
+  --sidebar-bg: #e7e7e7;
+  --accent: #0078d4;
+  --task-bg: #f9f9f9;
+  --task-border: #dcdcdc;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --header-bg: #2d2d2d;
+  --sidebar-bg: #252526;
+  --accent: #3a96dd;
+  --task-bg: #2a2a2a;
+  --task-border: #444;
+}
+
+/* ======== Sidebar ======== */
+.sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg);
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.sidebar li:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.sidebar li.active {
+  background-color: var(--accent);
+  color: white;
+  font-weight: bold;
+}
+
+/* ======== Main Section ======== */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+.theme-toggle {
+  padding: 5px 10px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #005a9e;
+}
+
+/* ======== Add Task ======== */
+.add-task-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--task-border);
+  border-radius: 5px;
+  background-color: var(--task-bg);
+  color: var(--text-color);
+}
+
+.add-task-bar button {
+  padding: 10px 20px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.add-task-bar button:hover {
+  background-color: #005a9e;
+}
+
+/* ======== Tareas ======== */
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--task-bg);
+  padding: 10px;
+  border: 1px solid var(--task-border);
+  border-radius: 5px;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.task-item:hover {
+  background-color: rgba(0, 120, 212, 0.08);
+}
+
+.task-item input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task-item .icon {
+  font-size: 1.2rem;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: transform 0.2s ease;
+}
+
+.task-actions button:hover {
+  transform: scale(1.2);
+}
+
+/* ======== Progreso ======== */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--accent);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+/* ======== Responsive ======== */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .add-task-bar {
+    flex-direction: column;
+  }
+
+  .add-task-bar input,
+  .add-task-bar button {
+    width: 100%;
+  }
+}
